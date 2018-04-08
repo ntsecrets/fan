@@ -51,10 +51,13 @@ You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
 ![title](https://github.com/ntsecrets/fan/blob/master/transistor-circuit.png)
 
 For the Lirc setup, see http://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote
+
 For the Dallas 1 Wire setup, see https://thepihut.com/blogs/raspberry-pi-tutorials/18095732-sensors-temperature-with-the-1-wire-interface-and-the-ds18b20
 
 The final product. Using a case that was designed for a HiFiBerry - the left 3 terminal block is for the 2 one wire sensors hooked in parallel, the right terminal block is for the PWM.
 
 One Wire terminal pins left to right:  GND  DATA  VCC
+
 PWM terminal pins left to right: GND SIGNAL_OUT VCC_FAN (10v)
+
 ![title](https://github.com/ntsecrets/fan/blob/master/fan.jpg)
