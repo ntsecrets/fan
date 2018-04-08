@@ -44,7 +44,7 @@ The IR commands uses LIRC for sending the IR signals.  You'll have to install th
 
 Again, I'll see if I can provide some schematics.  The script should show what pins are used for what.
 
-Update:  I believe this is the circuit used for the PWM control.  The code indicates which pin on the Pi to use.  Note that the VCC is connected to the 10v supplied from the fan itself, not from the pi.
+Update:  I believe this is the circuit used for the PWM control.  The code indicates which pin on the Pi to use.  Note that the VCC is connected to the 10v supplied from the fan itself, not from the pi.  The 1k resistor and 10k resistor values might be different, I need to check on that.  You may have to tinker a bit with that.
 
 You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
 
