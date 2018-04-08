@@ -1,5 +1,28 @@
 # fan
-Python Script for controlling a small server room fan and A/C using a Raspberry Pi.
+This is a Python Script for controlling a small server room fan and A/C using a Raspberry Pi.  The fan's speed will adujust depending on the how much air needs to be sucked out or blown in to maintain the target temperature.  That way the fan isn't cycling on and off, its running at a rather stable speed.  
+
+In my situation, the space the air is being blown into can get hot.  So if the outside and inside temps are higher than a threshold, it will shut the fan off and turn on the air conditioner. 
+
+Below are the settings you'll need to update in fan.py, most importantly the IDFtempSensor and OutsideSensor w1 address. 
+
+```python
+# ~*~**~*~*~*~* settings *~*~*~*~*~*~*~
+
+# Fan duty cycle storage area
+fanStats = '/home/pi/fanstats.txt'
+acMode = '/home/pi/acmode.txt'
+esMode = '/home/pi/esmode.txt'
+      
+IDFtempSensor = "28-00000544c340"
+OutsideSensor = "28-00000546550F"
+
+Frequency = 60 # seconds
+TargetTemp = 73.0
+dutycycle = 80 # initial duty cycle on startup
+OutsideThresh = 64.0
+
+```
+
 
 This script is called as a daemon from fan.sh which goes in /etc/init.d
 
