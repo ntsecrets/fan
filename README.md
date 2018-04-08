@@ -20,3 +20,8 @@ Here is a great fan by Fantech PrioAir http://a.co/fvUypiw which uses a PWM sign
 The IR commands uses LIRC for sending the IR signals.  You'll have to install that part to use it.
 
 Again, I'll see if I can provide some schematics.  The script should show what pins are used for what.
+
+Update:  I believe this is the circuit used for the PWM control.  The code indicates which pin on the Pi to use. 
+You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
+
+![title](https://github.com/ntsecrets/fan/blob/master/transistor-circuit.png)
