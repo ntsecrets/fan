@@ -49,3 +49,6 @@ Update:  I believe this is the circuit used for the PWM control.  The code indic
 You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
 
 ![title](https://github.com/ntsecrets/fan/blob/master/transistor-circuit.png)
+
+For the Lirc setup, see http://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote
+For the Dallas 1 Wire setup, see https://thepihut.com/blogs/raspberry-pi-tutorials/18095732-sensors-temperature-with-the-1-wire-interface-and-the-ds18b20
