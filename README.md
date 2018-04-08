@@ -1,5 +1,5 @@
 # fan
-Python Script for controlling a small server room fan and A/C
+Python Script for controlling a small server room fan and A/C using a Raspberry Pi.
 
 This script is called as a daemon from fan.sh which goes in /etc/init.d
 
