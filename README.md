@@ -44,7 +44,7 @@ The IR commands uses LIRC for sending the IR signals.  You'll have to install th
 
 Again, I'll see if I can provide some schematics.  The script should show what pins are used for what.
 
-Update:  I believe this is the circuit used for the PWM control.  The code indicates which pin on the Pi to use.  Note that the VCC is connected to the 10v supplied from the fan itself, not from the pi.  The 1k resistor and 10k resistor values might be different, I need to check on that.  You may have to tinker a bit with that.
+Update:  I believe this is the circuit used for the PWM control.  The code indicates which pin on the Pi to use.  Note that the VCC is connected to the 10v supplied from the fan itself, not from the pi.  The 1k resistor and 10k resistor values might be different, Check the ones in the photo at the bottom.
 
 You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
 
@@ -52,3 +52,9 @@ You'll also need to connect a pin to the Lirc IR LED via a 2N2222.
 
 For the Lirc setup, see http://www.raspberry-pi-geek.com/Archive/2015/10/Raspberry-Pi-IR-remote
 For the Dallas 1 Wire setup, see https://thepihut.com/blogs/raspberry-pi-tutorials/18095732-sensors-temperature-with-the-1-wire-interface-and-the-ds18b20
+
+The final product. Using a case that was designed for a HiFiBerry - the left 3 terminal block is for the 2 one wire sensors hooked in parallel, the right terminal block is for the PWM.
+
+One Wire terminal pins left to right:  GND  DATA  VCC
+PWM terminal pins left to right: GND SIGNAL_OUT VCC_FAN (10v)
+![title](https://github.com/ntsecrets/fan/blob/master/fan.jpg)
